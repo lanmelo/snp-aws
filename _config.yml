@@ -1,0 +1,6 @@
+remote_theme: pmarsceill/just-the-docs
+title: AWS Tutorial
+search_enabled: true
+aux_links:
+        "Sean N. Parker Center for Allergy and Asthma Research":
+                - "//med.stanford.edu/allergyandasthma.html"
