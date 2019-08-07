@@ -26,7 +26,7 @@ See [Create an EC2 Key Pair](/aws-docs/docs/awsservices/ec2/#createanec2keypair)
 
 ### Install ParallelCluster
 {: .d-inline }
-[<sup>1</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting_started.html)
+[<sup>2</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting_started.html)
 {: .d-inline-block }
 ParallelCluster is installed to your computer as a Python package.
 1. Enter the following into your Terminal to install:

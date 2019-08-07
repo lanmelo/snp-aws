@@ -90,6 +90,6 @@ To learn more about the different commands you can use with CLI, see the
 ### Regions
 AWS services are distributed across multiple Regions.
 For example, in the US, there are us-east-1 (N. Virginia), us-west-1 (N. California), and others.
-[<sup>5</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+[<sup>4</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 You should try to use us-east-1 for everything, because it is cheaper, has greater support, and contains the lab's shared resources.
 
