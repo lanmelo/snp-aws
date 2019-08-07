@@ -1,10 +1,10 @@
 ---
-title: Adding modules
+title: Add modules
 parent: Contributing
 nav_order: 3
 ---
 
-# Adding modules
+# Add modules
 {: .no_toc }
 
 ## Table of contents
@@ -32,7 +32,7 @@ nav_order: 3
 1. Create a .version file like the [example below](#example-version-file) in the same directory as the Modulefile
 	1. Replace the numbers in quotes with the name of your Modulefile
 	1. This determines which of the versions is the default (usually the most recent)
-1. Use [Creating an image](/docs/awsservices/ec2#creating-an-image) to update the custom AMI
+1. Use [Creating an image](/aws-docs/docs/awsservices/ec2#creating-an-image) to update the custom AMI
 1. If your module also depends on the creation of specialized indexes, add them to the
 [nadeaulab bucket](https://s3.console.aws.amazon.com/s3/buckets/nadeaulab) and update the
 [bucket-lib](https://github.com/nadeaulab/bucket-lib) repository

@@ -1,9 +1,9 @@
 ---
-title: Getting started
+title: Get started
 nav_order: 2
 ---
 
-# Getting started
+# Get started
 {: .no_toc }
 
 ## Table of contents
@@ -18,17 +18,22 @@ nav_order: 2
 Amazon Web Services, or AWS, is the largest cloud provider in the world.
 Their services are used for cloud computing at the Nadeau Lab.
 
-### Creating an account
+### High risk data
+AWS is **NOT** approved for any kind of high risk data. Do not use AWS for any kind of [protected health information](https://med.stanford.edu/irt/security/hipaa.html).
+
+### Create an account
 To use AWS for research at the Nadeau Lab, your AWS account must be a member of the lab’s organization.
 You can request that a member account be created for your Stanford email by sending us an
 [email](mailto:nadeau-aws@stanford.edu).
+
 If you already have an AWS account tied to that email, then your email must also contain the console login information of an IAM user with the AdministratorAccess policy for that account.
 For help in creating this user, see
 [Create an administrator IAM user](#create-an-administrator-iam-user).
+
 Remember that all AWS accounts in the organization must have multi-factor authentication enabled.
 This can be enabled with the My Security Credentials page from the right side of the navigation bar.
 
-### Why use an administrator IAM?
+### Administrator IAM
 One important principle of using AWS is that you should never use your account’s root access credentials unless strictly necessary.
 The root user login that you first receive when creating an AWS account has maximum privileges.
 However, according to the
@@ -37,8 +42,8 @@ every layer of computation should only have access to the information and resour
 For that reason, we use Identity and Access Management (IAM) users.
 These are entities within your AWS account that have their own associated login credentials and permissions.
 Once you create an IAM user with administrator privileges, you should lock away the root access credentials and only use them for modifying root user details.
-The organization’s Service Control Policy will block any attempts to use root access credentials for computing or storage management.
 [<sup>1</sup>](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
+The organization’s Service Control Policy will block any attempts to use root access credentials for computing or storage management.
 
 #### Give IAM users access to the billing console
 {: .d-inline }
@@ -61,10 +66,7 @@ It allows usage and budgeting information to be accessed without root access cre
 1. Under “Set permissions,” select “Attach existing policies directly” and add “AdministratorAccess” to the user
 1. Once you create the user, copy the Access Key ID and the Secret Access Key and store them somewhere safe - if you lose these keys, you also lose access to your user
 
-### Using the Command Line Interface (CLI)
-{: .d-inline }
-[<sup>4</sup>](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
-{: .d-inline-block }
+### Command Line Interface (CLI)
 The AWS Command Line Interface (CLI) is used to access AWS services from a shell.
 To learn more about the different commands you can use with CLI, see the
 [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html).
@@ -84,3 +86,10 @@ To learn more about the different commands you can use with CLI, see the
 1. Follow the prompts, filling in your user data with the Access Key ID and the Secret Access Key from the previous section
 1. For “Default region name,” enter “us-east-1”
 1. For “Default output format,” enter “json”
+
+### Regions
+AWS services are distributed across multiple Regions.
+For example, in the US, there are us-east-1 (N. Virginia), us-west-1 (N. California), and others.
+[<sup>5</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+You should try to use us-east-1 for everything, because it is cheaper, has greater support, and contains the lab's shared resources.
+

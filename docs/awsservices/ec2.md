@@ -45,8 +45,9 @@ For this reason, you need an EC2 Key Pair in the region you are working in.
 1. Later, if you wish to delete a key pair, enter the following into your terminal
         ```
         aws ec2 delete-key-pair --key-name MyKeyPair
+	```
 
-### Creating an EC2 instance
+### Create an EC2 instance
 {: .d-inline }
 [<sup>2</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 {: .d-inline-block }
@@ -57,7 +58,7 @@ For this reason, you need an EC2 Key Pair in the region you are working in.
 	1. t2.micro is usually enough, and qualifies for free tier
 1. Press Review & Launch, and Launch with the key pair you made earlier during
 
-### Using an instance
+### Connect to an instance
 {: .d-inline }
 [<sup>3</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 {: .d-inline-block }
@@ -94,9 +95,9 @@ allow you to bid on an instance type.
 Usually, this price is much lower than the on-demand rate.
 However, if the market price goes above your bid price, you lose your instance and all of the information attached to it.
 
-### Creating an image
+### Create an image
 1. If your instance is built off of one of the ParallelCluster images, enter the following into the instance:
-[<sup>5</sup>](https://aws-parallelcluster.readthedocs.io/en/latest/tutorials/02_ami_customization.html)
+[<sup>5</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_02_ami_customization.html)
 	```
 	sudo /usr/local/sbin/ami_cleanup.sh
 	```
@@ -115,4 +116,4 @@ select your instance and stop it (Actions > Instance State > Stop)
 1. Make your AMI public so that other people can have access to it by selecting it from the AMIs menu in the EC2 Management Dashboard (Actions > Image Permissions)
 1. If you are adding to the lab’s custom AMI, clearly document all of the commands used to customize the instance and update the
 [parallelcluster-ami](https://github.com/nadeaulab/parallelcluster-ami) GitHub
-	1. Also update this documentation's [Installed Modules](/docs/parallelcluster/installedmodules) page
+	1. Also update this documentation's [Installed Modules](/aws-docs/docs/parallelcluster/installedmodules) page

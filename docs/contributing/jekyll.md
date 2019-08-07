@@ -39,5 +39,11 @@ To test your edits to the repository, you can locally host the website on your c
 	```
 	bundle exec jekyll serve --watch
 	```
-1. It might be useful to use a bash function saved to your ~./bashrc file, such as
-
+	1. It might be useful to instead use a bash function saved to your ~./bashrc file, such as
+		```
+		function devsite {
+			pushd $1 &> /dev/null;
+			bundle exec jekyll serve --watch;
+			popd &> /dev/null;
+		}
+		```

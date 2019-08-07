@@ -14,7 +14,7 @@ nav_order: 4
 
 ---
 
-### Accessing the pipelines
+### Download the pipelines
 All of the pipelines are stored at [github.com/nadeaulab](https://github.com/nadeaulab).
 You can easily clone them into your directory with the Terminal command:
 ```
@@ -30,7 +30,7 @@ Finally, a user-created script such as `/example_project/scripts/submit_pipeline
 ### How can I create a project?
 You can just copy the `/example_project` directory and customize the script to get started! Here are a few details:
 
-#### Organizing data
+#### Data organization
 Your project directory should look something like this:
 ```
 MyProject
@@ -43,7 +43,7 @@ The `/scripts` folder should contain all of the scripts that you run on the data
 The scripts should be configured to write all of the output from the job scheduler to `/logs` and all of the programs’ results to `/results`.
 The `/example_project` does this automatically.
 
-#### Understanding the submit_pipeline file
+#### The submit_pipeline file
 This file contains all of the variables that are required by the scripts.
 For example, all of the scripts in `/steps` assume that the vCPU variable exists, whereas all of the different pipeline scripts assume that the `results_dir`, `logs_dir`, and `steps` variables exist.
 

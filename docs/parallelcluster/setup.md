@@ -1,10 +1,10 @@
 ---
-title: Setting up
+title: Set up
 parent: ParallelCluster
 nav_order: 2
 ---
 
-# Setting up
+# Set up
 {: .no_toc }
 
 ## Table of contents
@@ -16,17 +16,17 @@ nav_order: 2
 ---
 
 ### Use an IAM user
-As mentioned in [Getting started](/docs/gettingstarted),
+As mentioned in [Getting started](/aws-docs/docs/getstarted),
 IAM users must always be used instead of root access credentials.
 For ParallelCluster, the IAM user must have the AdministratorAccess policy attached to it.
 [<sup>1</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/iam.html#defaults)
 
 ### Create an EC2 Key Pair
-See [Create an EC2 Key Pair](/docs/awsservices/ec2/#createanec2keypair)
+See [Create an EC2 Key Pair](/aws-docs/docs/awsservices/ec2/#createanec2keypair)
 
 ### Install ParallelCluster
 {: .d-inline }
-[<sup>1</sup>](https://aws-parallelcluster.readthedocs.io/en/latest/getting_started.html)
+[<sup>1</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting_started.html)
 {: .d-inline-block }
 ParallelCluster is installed to your computer as a Python package.
 1. Enter the following into your Terminal to install:
@@ -41,7 +41,7 @@ ParallelCluster is installed to your computer as a Python package.
 1. For the other fields, select one of the options given
 1. For “Key Name,” select the one that was created in the previous section
 
-### Update your ParallelCluster install
+### Update ParallelCluster
 ParallelCluster is frequently updated. To update your install, run the following command:
 
 ```

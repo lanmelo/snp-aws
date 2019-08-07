@@ -1,7 +1,8 @@
 remote_theme: pmarsceill/just-the-docs
 title: AWS Tutorial
 search_enabled: true
+baseurl: /aws-docs/
+custom_ami: ami-0ad52717c4558ea80
 aux_links:
         "Nadeau Lab on GitHub":
                 - "https://github.com/nadeaulab/"
-custom_ami: ami-0ad52717c4558ea80

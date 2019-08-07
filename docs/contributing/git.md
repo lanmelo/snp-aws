@@ -32,7 +32,7 @@ This allows multiple people to make their own additions to our service in a clea
 	```
 	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 	```
-1. Copy the public key (*.pub) in your ~/.ssh folder and paste it under GitHub’s
+1. Copy the public key (\*.pub) in your ~/.ssh folder and paste it under GitHub’s
 [SSH keys / Add new](https://github.com/settings/ssh/new) page in the Settings
 [<sup>1</sup>](https://help.github.com/en/articles/connecting-to-github-with-ssh)
 1. Test your connection by typing the following into your Terminal:
@@ -40,7 +40,10 @@ This allows multiple people to make their own additions to our service in a clea
 	ssh -T git@github.com
 	```
 
-### Using git
+### Git commands
+{: .d-inline }
+[<sup>2</sup>](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+{: .d-inline-block }
 * To clone the repository, enter the following into your Terminal:
 	```
 	git clone git@github.com:nadeaulab/aws-docs.git
@@ -69,4 +72,3 @@ This allows multiple people to make their own additions to our service in a clea
 	```
 	git add /path/to/file OR git add .
 	```
-

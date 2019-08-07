@@ -5,7 +5,7 @@ nav_order: 1
 
 # Learn computational biology
 ## This tutorial covers High Performance Computing (HPC), data analysis pipelines, and integration with the Amazon Web Services (AWS) cloud
-[Get started](/docs/gettingstarted){: .btn .btn-primary .fs-5 .mb4 .mb-md-0 .mr-2 }
+[Get started](/aws-docs/docs/getstarted){: .btn .btn-primary .fs-5 .mb4 .mb-md-0 .mr-2 }
 
 ---
 
@@ -18,12 +18,12 @@ If this is not the case, both
 [LinuxCommand.org](http://linuxcommand.org) and the
 [Linux Documentation Project](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html) have some beginners' guides.
 
-### [ParallelCluster](/docs/parallelcluster)
+### [ParallelCluster](/aws-docs/docs/parallelcluster)
 ParallelCluster deploys a High Performance Computing (HPC) cluster in the Amazon Web Services (AWS) cloud.
 It functions like any other cluster, except it automatically adds nodes as need based off of how many jobs are being submitted.
 This means there is no waiting in queues, and you only pay for the computation and storage you use.
 
-### [Standard pipelines](/docs/pipelines)
+### [Pipelines](/aws-docs/docs/pipelines)
 When getting started with bioinformatics, a lot of time is spent developing analysis pipelines for different technologies.
 By creating shared, standardized pipelines, more time can be focused on interpreting the biologically relevant results from a sequencing technology or assay.
 

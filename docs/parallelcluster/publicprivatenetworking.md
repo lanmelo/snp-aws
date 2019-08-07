@@ -7,9 +7,9 @@ nav_order: 6
 # Public-private networking
 
 If you need to create more than five clusters, or if you want to close off the compute nodes from public internet access, it is necessary to implement a public-private networking module.
-This requires updating the `[ vpc . . . ]` settings in the ParallelCluster config file.
+This requires updating the `[ vpc ... ]` settings in the ParallelCluster config file.
 
-### Creating public and private VPCs
+### Create public and private VPCs
 {: .d-inline }
 [<sup>1</sup>](https://github.com/aws/aws-parallelcluster/wiki/Public-Private-Networking)
 {: .d-inline-block }
