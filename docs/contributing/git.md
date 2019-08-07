@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Git
 parent: Contributing
 nav_order: 2
@@ -16,19 +15,58 @@ nav_order: 2
 
 ---
 
-## What we're doing here
-Learn how to use Git
+### What are git and GitHub?
+Git is a program that tracks all of the changes made to a project, which is managed under a special `.git` folder called a repository.
+GitHub is used to manage all of the [lab’s repositories](https://github.com/nadeaulab).
+This allows multiple people to make their own additions to our service in a clear, documented way.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat. Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Amet luctus venenatis lectus magna fringilla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sagittis orci a scelerisque purus semper eget duis. Nulla pharetra diam sit amet nisl suscipit. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem dolor. Tristique senectus et netus et malesuada.
+### Set up git and GitHub
+1. [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. Type the following into the Terminal:
+	```
+	git config --global user.email “you@example.edu”
+	git config --global user.name “Your Name”
+	```
+1. [Create a GitHub account](https://github.com/)
+1. Type the following into the Terminal:
+	```
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	```
+1. Copy the public key (*.pub) in your ~/.ssh folder and paste it under GitHub’s
+[SSH keys / Add new](https://github.com/settings/ssh/new) page in the Settings
+[<sup>1</sup>](https://help.github.com/en/articles/connecting-to-github-with-ssh)
+1. Test your connection by typing the following into your Terminal:
+	```
+	ssh -T git@github.com
+	```
 
-Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique. Vulputate mi sit amet mauris. Sodales neque sodales ut etiam sit. Dignissim suspendisse in est ante in. Volutpat commodo sed egestas egestas. Felis donec et odio pellentesque diam. Pharetra vel turpis nunc eget lorem dolor sed viverra. Porta nibh venenatis cras sed felis eget. Aliquam ultrices sagittis orci a. Dignissim diam quis enim lobortis. Aliquet porttitor lacus luctus accumsan. Dignissim convallis aenean et tortor at risus viverra adipiscing at.
-
----
-
-## More information
-Stay tuned
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat. Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Amet luctus venenatis lectus magna fringilla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sagittis orci a scelerisque purus semper eget duis. Nulla pharetra diam sit amet nisl suscipit. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem dolor. Tristique senectus et netus et malesuada.
-
-Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique. Vulputate mi sit amet mauris. Sodales neque sodales ut etiam sit. Dignissim suspendisse in est ante in. Volutpat commodo sed egestas egestas. Felis donec et odio pellentesque diam. Pharetra vel turpis nunc eget lorem dolor sed viverra. Porta nibh venenatis cras sed felis eget. Aliquam ultrices sagittis orci a. Dignissim diam quis enim lobortis. Aliquet porttitor lacus luctus accumsan. Dignissim convallis aenean et tortor at risus viverra adipiscing at.
+### Using git
+* To clone the repository, enter the following into your Terminal:
+	```
+	git clone git@github.com:nadeaulab/aws-docs.git
+	`
+* To test your own additions, first create your own branch:
+	```
+	git branch MyBranch
+	```
+* To switch between branches:
+	```
+	git checkout MyOtherBranch
+	```
+* To both create the branch and switch between branches:
+	```
+	git checkout -b MyBranch
+	```
+* To delete a branch:
+	```
+	git branch -d MyBranch
+	```
+* Once you have modified or created the files necessary, see the changes with:
+	```
+	git status
+	```
+* Stage the modifications for a new commit with:
+	```
+	git add /path/to/file OR git add .
+	```
 

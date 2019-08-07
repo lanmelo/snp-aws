@@ -2,5 +2,6 @@ remote_theme: pmarsceill/just-the-docs
 title: AWS Tutorial
 search_enabled: true
 aux_links:
-        "Sean N. Parker Center for Allergy and Asthma Research":
-                - "//med.stanford.edu/allergyandasthma.html"
+        "Nadeau Lab on GitHub":
+                - "https://github.com/nadeaulab/"
+custom_ami: ami-0ad52717c4558ea80

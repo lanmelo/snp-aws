@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Contributing
-nav_order: 2
+nav_order: 7
 has_children: true
 ---
 
-Learn how to contribute
-
+# Contributing
+## Learn how to contribute to the Nadeau Lab's projects!
