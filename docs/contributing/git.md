@@ -41,13 +41,11 @@ This allows multiple people to make their own additions to our service in a clea
 	```
 
 ### Git commands
-{: .d-inline }
-[<sup>2</sup>](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
-{: .d-inline-block }
+Learn more with Github's [Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/).
 * To clone the repository, enter the following into your Terminal:
 	```
 	git clone git@github.com:nadeaulab/aws-docs.git
-	`
+	```
 * To test your own additions, first create your own branch:
 	```
 	git branch MyBranch

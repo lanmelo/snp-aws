@@ -25,10 +25,8 @@ For ParallelCluster, the IAM user must have the AdministratorAccess policy attac
 See [Create an EC2 Key Pair](/aws-docs/docs/awsservices/ec2.html#create-an-ec2-key-pair)
 
 ### Install ParallelCluster
-{: .d-inline }
-[<sup>2</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting_started.html)
-{: .d-inline-block }
 ParallelCluster is installed to your computer as a Python package.
+[<sup>2</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/getting_started.html)
 1. Enter the following into your Terminal to install:
 	```
 	sudo pip3 install aws-parallelcluster

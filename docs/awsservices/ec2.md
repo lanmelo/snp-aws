@@ -25,11 +25,9 @@ The storage attached to these instances is managed by Elastic Block Storage, or
 [EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html).
 
 ### Create an EC2 Key Pair
-{: .d-inline }
+To connect to an EC2 instance via SSH, you need an EC2 Key Pair.
+Key Pairs are region-specific, which means that you need a new key for each region you work in.
 [<sup>1</sup>](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-keypairs.html)
-{: .d-inline-block }
-ParallelCluster uses the EC2 service for computing.
-For this reason, you need an EC2 Key Pair in the region you are working in.
 1. If the .ssh directory is not present in your home directory, enter:
         ```
         sudo mkdir ~/.ssh
@@ -48,21 +46,18 @@ For this reason, you need an EC2 Key Pair in the region you are working in.
 	```
 
 ### Create an EC2 instance
-{: .d-inline }
+To create an instance, you need to specify both an AMI and an instance type.
 [<sup>2</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-{: .d-inline-block }
 1. From the management console, navigate to the
 [EC2 Management Dashboard](https://console.aws.amazon.com/ec2/) and click on Launch Instance
 1. Enter the image ID for the AMI that you want to use - if you want it to be compatible with ParallelCluster, you can choose from one of its prebuilt choices
 1. Select an instance type from [AWS’ options](https://aws.amazon.com/ec2/instance-types/)
-	1. t2.micro is usually enough, and qualifies for free tier
+	1. For the first tier, t2.micro qualifies for the free tier
 1. Press Review & Launch, and Launch with the key pair you made earlier during
 
 ### Connect to an instance
-{: .d-inline }
-[<sup>3</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
-{: .d-inline-block }
 To use ssh or scp, you must know the Public DNS of your instance, which is shown under the Instances menu from the EC2 Management Dashboard
+[<sup>3</sup>](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html).
 * To ssh into your instance, enter the following into your Terminal:
 	```
 	ssh -i /path/MyKeyPair.pem ubuntu@ec2-198-51-100-1.compute-1.amazonaws.com
