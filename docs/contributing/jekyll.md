@@ -20,7 +20,7 @@ This documentation is stored in the
 and it uses Jekyll for generating static pages.
 To test your edits to the repository, you can locally host the website on your computer.
 
-### Setup Jekyll
+### Set up Jekyll
 1. Generate a [GitHub token](https://github.com/settings/tokens) and copy the token
 1. Enter the following into your Terminal:
 [<sup>1</sup>](https://mycyberuniverse.com/fixing-jekyll-github-metadata-warning.html)

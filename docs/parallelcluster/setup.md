@@ -22,7 +22,7 @@ For ParallelCluster, the IAM user must have the AdministratorAccess policy attac
 [<sup>1</sup>](https://docs.aws.amazon.com/parallelcluster/latest/ug/iam.html#defaults)
 
 ### Create an EC2 Key Pair
-See [Create an EC2 Key Pair](/aws-docs/docs/awsservices/ec2/#createanec2keypair)
+See [Create an EC2 Key Pair](/aws-docs/docs/awsservices/ec2.html#create-an-ec2-key-pair)
 
 ### Install ParallelCluster
 {: .d-inline }

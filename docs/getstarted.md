@@ -69,7 +69,7 @@ To learn more about the different commands you can use with CLI, see the
 	```
 1. If you type “aws” into the Terminal and you get “command not found” you have to add the directory to your path by entering the following into your Terminal
 	```
-	echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.bashrc`
+	echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.bashrc
 	source $HOME/.bashrc
 	```
 1. Configure CLI by entering the following into your Terminal
