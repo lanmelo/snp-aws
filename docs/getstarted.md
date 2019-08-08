@@ -1,6 +1,6 @@
 ---
 title: Get started
-nav_order: 2
+nav_order: 3
 ---
 
 # Get started
@@ -13,13 +13,6 @@ nav_order: 2
 {:toc}
 
 ---
-
-### What is AWS?
-Amazon Web Services, or AWS, is the largest cloud provider in the world.
-Their services are used for cloud computing at the Nadeau Lab.
-
-### High risk data
-AWS is **NOT** approved for any kind of high risk data. Do not use AWS for any kind of [protected health information](https://med.stanford.edu/irt/security/hipaa.html).
 
 ### Create an account
 To use AWS for research at the Nadeau Lab, your AWS account must be a member of the lab’s organization.
