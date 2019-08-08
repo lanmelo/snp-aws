@@ -27,7 +27,7 @@ Their services are used for cloud computing at the Sean N. Parker Center.
 #### High risk data
 {: .d-inline-block }
 Warning
-{: .label .label-red}
+{: .label .label-red .m-0 }
 AWS is **NOT** approved for any kind of high risk data at the Sean N. Parker Center.
 Do not use AWS for any kind of
 [protected health information](https://med.stanford.edu/irt/security/hipaa.html).
@@ -49,8 +49,8 @@ Compute nodes are more powerful computers, with greater memory and processing po
 
 #### Login nodes are not for computing
 {: .d-inline-block }
-Warning
-{: .label .label-red }
+Caution
+{: .label .label-yellow .m-0 }
 Login (or master) nodes should not be used for computationally intensive tasks.
 Those should be submitted to compute nodes using job schedulers.
 
@@ -59,3 +59,18 @@ When you want to run a script or program in a cluster, you have to submit it to 
 When you do this, it becomes packaged into a job, which includes both the computational resources being requested and the software that will run on them.
 Programs known as job schedulers manage the process of allocating the computational resources needed to execute a job.
 
+### What are pipelines?
+Pipelines, or workflows, refer to the chain of transformations that biological data undergoes in bioinformatic analysis.
+At each step of a pipeline, a different program or script is executed.
+The pipeline combines all of these steps together so that the same analysis can be performed on hundreds or thousands of different samples.
+Typically, pipelines are written in Python, R, or Bash scripts.
+You should always save your pipelines so that you can show exactly how you performed the analysis of your data.
+
+#### Reusing pipelines
+{: .d-inline-block }
+Caution
+{: .label .label-yellow .m-0 }
+When you put a lot of work into creating a pipeline for one project, you might be tempted to reuse the same pipeline for another project.
+However, the raw data in each project is unique - it is usually created using different technologies, and for different purposes.
+For that reason, you should always tailor your pipelines to the project you are working on.
+A standardized pipeline can never replace creating your own scripts that are specific to the decine of that specific experiment.

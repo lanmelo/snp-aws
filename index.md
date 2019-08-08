@@ -4,8 +4,9 @@ nav_order: 1
 ---
 
 # Learn computational biology
-## This tutorial covers High Performance Computing (HPC), data analysis pipelines, and integration with the Amazon Web Services (AWS) cloud
-[Get started](/aws-docs/docs/getstarted){: .btn .btn-primary .fs-5 .mb4 .mb-md-0 .mr-2 }
+## This tutorial covers High Performance Computing (HPC), data analysis pipelines, and the Amazon Web Services (AWS) cloud
+[Learn more](/aws-docs/docs/concepts){: .btn .fs-5 .mb-md-0 .mr-2 }
+[Get started](/aws-docs/docs/getstarted){: .btn .btn-primary .fs-5 .mb-md-0 .mr-2 }
 
 ---
 
