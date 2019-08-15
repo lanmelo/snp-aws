@@ -25,9 +25,12 @@ To test your edits to the repository, you can locally host the website on your c
 1. Enter the following into your Terminal:
 [<sup>1</sup>](https://mycyberuniverse.com/fixing-jekyll-github-metadata-warning.html)
 	```
-	echo ‘export JEKYLL_GITHUB_TOKEN=”...”’ >> ~/.bashrc
+	echo 'export JEKYLL_GITHUB_TOKEN="..."' >> ~/.bashrc
+	echo 'export GEM_HOME="$HOME/.gem"' >> ~/.bashrc
+	echo 'export PATH="$HOME/.gem/bin:$PATH"' >> ~/.bashrc
+	source ~/.bashrc
+	gem install bundler
 	```
-1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
 
 ### Locally host the website
 1. Go to the project’s root directory and enter the following into your Terminal:

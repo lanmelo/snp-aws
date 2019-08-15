@@ -24,8 +24,8 @@ This allows multiple people to make their own additions to our service in a clea
 1. [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 1. Type the following into the Terminal:
 	```
-	git config --global user.email “you@example.edu”
-	git config --global user.name “Your Name”
+	git config --global user.email "you@example.edu"
+	git config --global user.name "Your Name"
 	```
 1. [Create a GitHub account](https://github.com/)
 1. Type the following into the Terminal:

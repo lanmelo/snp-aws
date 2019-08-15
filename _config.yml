@@ -6,3 +6,6 @@ custom_ami: ami-0ad52717c4558ea80
 aux_links:
         "Nadeau Lab on GitHub":
                 - "https://github.com/nadeaulab/"
+footer_content: "This tutorial was created for the
+<a href=https://med.stanford.edu/allergyandasthma.html>Sean N. Parker Center for Allergy and Asthma Research</a> by
+<a href=https://github.com/lanmelo>Lucas Melo</a>"
