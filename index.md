@@ -27,10 +27,3 @@ This means there is no waiting in queues, and you only pay for the computation a
 ### [Pipelines](/aws-docs/docs/pipelines)
 When getting started with bioinformatics, a lot of time is spent developing analysis pipelines for different technologies.
 By creating shared, standardized pipelines, more time can be focused on interpreting the biologically relevant results from a sequencing technology or assay.
-
----
-#### About
-This tutorial was created for the
-[Sean N. Parker Center for Allergy and Asthma Research](https://med.stanford.edu/allergyandasthma.html) by
-[Lucas Melo](https://github.com/lanmelo)
-
