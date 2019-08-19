@@ -1,7 +1,7 @@
 ---
 title: Managing the organization
 parent: Organizations
-nav_order: 2
+nav_order: 3
 ---
 
 # Managing the organization
